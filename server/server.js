@@ -8,6 +8,7 @@ const app = express();
 app.use(cors({
    origin: [
     "http://localhost:5173",
+    "http://localhost:4173",
     "https://blue-meet-e7zz463l2-puskar10s-projects.vercel.app",
     "https://blue-meet-git-main-puskar10s-projects.vercel.app"
   ],
@@ -19,6 +20,7 @@ const io = new Server(server, {
   cors: {
     origin: [
       "http://localhost:5173",
+      "http://localhost:4173",
       "https://blue-meet-e7zz463l2-puskar10s-projects.vercel.app",
       "https://blue-meet-git-main-puskar10s-projects.vercel.app",
     ],
